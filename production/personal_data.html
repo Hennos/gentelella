@@ -146,17 +146,11 @@
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
-                    <li>
-                      <a href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a>
-                    </li>
-                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="javascript:;">Профиль</a></li>
+                    <li><a href="javascript:;">Справка</a></li>
                     <li>
                       <a href="login.html"
-                        ><i class="fa fa-sign-out pull-right"></i> Log Out</a
+                        ><i class="fa fa-sign-out pull-right"></i>Выход</a
                       >
                     </li>
                   </ul>
@@ -168,7 +162,101 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main"></div>
+        <div class="right_col" role="main">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>Личные данные</h3>
+            </div>
+          </div>
+
+          <div class="x_panel">
+            <div class="x_content">
+              <form class="form-vertical">
+                <div class="form-group">
+                  <label>ФИО в имен. падеже</label>
+                  <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Фамилия"
+                      />
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Имя"
+                      />
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Отчество"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>ФИО в род. падеже</label>
+                  <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Фамилия"
+                      />
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Имя"
+                      />
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Отчество"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Пол</label>
+                  <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <select class="form-control">
+                        <option value="">Муж.</option>
+                        <option value="">Жен.</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Дата рождения</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Text input"
+                  />
+                </div>
+                <div class="form-group">
+                  <div>
+                    <button type="submit" class="btn btn-success">
+                      Сохранить
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Сбросить
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <!-- /page content -->
 
         <!-- footer content -->
@@ -191,36 +279,31 @@
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-    <!-- gauge.js -->
-    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
     <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- Skycons -->
-    <script src="../vendors/skycons/skycons.js"></script>
-    <!-- Flot -->
-    <script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="../vendors/DateJS/build/date.js"></script>
-    <!-- JQVMap -->
-    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <!-- bootstrap-daterangepicker -->
     <script src="../vendors/moment/min/moment.min.js"></script>
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="../vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="../vendors/starrr/dist/starrr.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
   </body>

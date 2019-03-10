@@ -3,7 +3,8 @@
   "version": "1.4.0",
   "description": "Gentelella Admin is a free to use Bootstrap admin template",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -31,9 +32,12 @@
   },
   "homepage": "https://github.com/puikinsh/gentelella#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.12.10",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
