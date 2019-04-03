@@ -10,6 +10,8 @@
 
     <title>СПИИРАН</title>
 
+    <!-- В зависимостях заменить пути на абсолютные до актуального местнонахождения исходников -->
+
     <!-- Bootstrap -->
     <link
       href="../vendors/bootstrap/dist/css/bootstrap.min.css"
@@ -20,96 +22,12 @@
       href="../vendors/font-awesome/css/font-awesome.min.css"
       rel="stylesheet"
     />
-    <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet" />
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet" />
-    <!-- Datatables -->
-    <link
-      href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css"
-      rel="stylesheet"
-    />
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet" />
 
-    <style type="text/css">
-      .search-templates-button {
-        width: 120px;
-        margin-top: 10px;
-      }
-
-      .search-templates-input .form-group {
-        display: inline-block;
-        margin-right: 15px;
-        width: 250px;
-      }
-
-      .document-templates-area {
-        margin-top: 30px;
-      }
-
-      .document-templates-area .document-templates-group > p {
-        font-weight: bold;
-      }
-
-      .document-templates-area .templates-group-row {
-        padding-left: 0;
-        list-style: none;
-      }
-
-      .document-templates-area .templates-group-row > .group-row-item {
-        vertical-align: top;
-        display: inline-block;
-        margin-right: 15px;
-      }
-
-      .document-templates-area .templates-group-row > .group-row-item:last-of-type {
-        margin-right: 0;
-      }
-      
-      .document-templates-group .document-template-unpack {
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 150px;
-        height: 200px;
-      }
-
-      .document-template:hover {
-        cursor: pointer;
-      }
-
-      .document-template > .document-template-preview {
-        width: 150px;
-        height: 200px;
-        box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
-      }
-
-      .document-template > .document-template-name {
-        padding-top: 5px;
-        width: 150px
-      }
-
-
-    </style>
   </head>
 
   <body class="nav-md">
@@ -224,7 +142,7 @@
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li><a href="javascript:;"> Профиль</a></li>
                     <li><a href="javascript:;"> Справка</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i>Выход</a></li>
+                    <li><a href="javascript:;"><i class="fa fa-sign-out pull-right"></i>Выход</a></li>
                   </ul>
                 </li>
               </ul>
@@ -284,6 +202,8 @@
                     </div>
                   </div>
 
+                  <!-- Пути до заглушки заменить на путь до заглушки к конкретному шиблону документа -->
+
                   <div id="container-document-templates">
                     <div class="document-templates-area">
                       <div class="document-templates-group">
@@ -292,20 +212,8 @@
                           <ul class="templates-group-row">
                             <li class="group-row-item">
                               <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
+                                <img src="images/document-template-preview.png" class="document-template-preview"></img>
                                 <p class="document-template-name">Замена лампочек</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Принятие на работу</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Отпуск</p>
                               </a>
                             </li>
                           </ul>
@@ -317,44 +225,9 @@
                           <ul class="templates-group-row">
                             <li class="group-row-item">
                               <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
+                                <img src="images/document-template-preview.png" class="document-template-preview"></img>
                                 <p class="document-template-name">Принятие на работу</p>
                               </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Отпуск</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Отзыв из отпуска</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Увольнение</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Приём в аспирантуру</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Академический отпуск</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <div class="document-template-unpack">
-                                <i class="fa fa-plus"></i>
-                              </div>
                             </li>
                           </ul>
                         </div>
@@ -365,44 +238,9 @@
                           <ul class="templates-group-row">
                             <li class="group-row-item">
                               <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
+                                <img src="images/document-template-preview.png" class="document-template-preview"></img>
                                 <p class="document-template-name">Направление в командировку</p>
                               </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Подготовка справок</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Замена лампочек</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Создание ящиков электронной почты</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Назначение ответственным...</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Выплаты по проектам</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <div class="document-template-unpack">
-                                <i class="fa fa-plus"></i>
-                              </div>
                             </li>
                           </ul>
                         </div>
@@ -413,20 +251,8 @@
                           <ul class="templates-group-row">
                             <li class="group-row-item">
                               <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
+                                <img src="images/document-template-preview.png" class="document-template-preview"></img>
                                 <p class="document-template-name">Авансовый отчёт по командировке</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Финансовый отчёт по командировке</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Отчёт о заграничной командировке</p>
                               </a>
                             </li>
                           </ul>
@@ -438,14 +264,8 @@
                           <ul class="templates-group-row">
                             <li class="group-row-item">
                               <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
+                                <img src="images/document-template-preview.png" class="document-template-preview"></img>
                                 <p class="document-template-name">Бланк СПИИРАН</p>
-                              </a>
-                            </li>
-                            <li class="group-row-item">
-                              <a class="document-template">
-                                <img src="./images/document-template-preview.png" class="document-template-preview"></img>
-                                <p class="document-template-name">Бланк презентации</p>
                               </a>
                             </li>
                           </ul>
@@ -472,31 +292,16 @@
       </div>
     </div>
 
+    <!-- В зависимостях заменить пути на абсолютные до актуального местнонахождения исходников -->
+
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- Datatables -->
-    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-    <script src="../vendors/jszip/dist/jszip.min.js"></script>
-    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
 
     <!-- Custom Theme Scripts -->
